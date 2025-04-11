@@ -36,14 +36,25 @@ pip install -r requirements.txt
 启动数字人
 bash
 python main.py
+
 🎮 操作指南
 角色配置文件示例:
-config/main.py
+main.py
+
+声音配置:
+使用KOKOROTTS速度最快。
+
+如何显卡比较好的话，可以将声音换成CosyVoice2TTS,已经在tts.py中进行了实现，但是我的电脑有点慢，具体需要修改tts.py中的prompt_text="your.wav文本"，ref_path = 'your.wav'
 
 llm本地配置：
 self.base_url = 'http://localhost:11434/v1'
 self.client = openai.OpenAI(api_key=self.api_key, base_url=self.base_url)
 self.model_name = 'qwq-0.5b:latest'
+
+数字人形象配置：
+player.py PygameSoundPlayer
+
+model_path="../../live2/models/兔兔/520兔兔.model3.json"
 ```
 
 
