@@ -1,0 +1,135 @@
+[
+    {
+        "type": "function",
+        "function": {
+            "name": "get_weather",
+            "description": "获取某个地点的天气，用户应先提供一个位置，比如用户说杭州天气，参数为：zhejiang/hangzhou，比如用户说北京天气怎么样，参数为：beijing/beijing",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "city": {
+                        "type": "string",
+                        "description": "城市，zhejiang/hangzhou"
+                    }
+                },
+                "required": [
+                    "city"
+                ]
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "ielts_speaking_practice",
+            "description": "提供雅思口语练习的题目和建议，用户可以请求特定主题的练习，例如：'请给我一个旅游主题的雅思口语题",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "topic": {
+                        "type": "string",
+                        "description": "练习主题，例如：旅游、工作、教育等"
+                    }
+                },
+                "required": [
+
+                ]
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "get_day_of_week",
+            "description": "获取当前日期的星期几，用户可以询问当前日期或时间，参数为空，因为函数自动获取当前时间",
+            "parameters": {
+                "type": "object",
+                "properties": {
+
+                },
+                "required": [
+
+                ]
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "schedule_task",
+            "description": "创建一个定时任务，用户应提供任务的执行时间和任务内容。\n比如用户说每天早上8点提醒我喝水，参数为：time: '08:00', content: '提醒我喝水'。",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "time": {
+                        "type": "string",
+                        "description": "任务的执行时间，格式为HH:mm，比如'08:00'表示早上8点。"
+                    },
+                    "content": {
+                        "type": "string",
+                        "description": "任务的内容，比如'提醒我喝水'。"
+                    }
+                },
+                "required": [
+                    "time",
+                    "content"
+                ]
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "open_application",
+            "description": "在 Mac 电脑上打开指定的应用程序，用户应提供应用程序的名称。\n比如用户说打开Safari，参数为：application_name: 'Safari'。",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "application_name": {
+                        "type": "string",
+                        "description": "应用程序的名称，比如'Safari'、'Finder'、'Notes'等。"
+                    }
+                },
+                "required": [
+                    "application_name"
+                ]
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "aigc_manus",
+            "description": "该函数可以做任何你想做的事情，如果不知道调用那个工具，可以默认调用该工具，调用 Manus AI Agent 执行复杂任务，用户应提供任务描述和所需的参数。Manus 能够独立思考、规划并执行复杂任务，直接交付完整成果。例如：\n- **研究任务**：深入研究特定主题，撰写报告或文章。\n- **数据分析**：分析市场趋势、股票表现等数据，并提供见解。\n- **内容创作**：生成高质量的文章、PPT 等内容。\n- **任务自动化**：自动执行重复性任务，如筛选简历、处理文件等。",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "task_description": {
+                        "type": "string",
+                        "description": "要执行的任务描述，例如'撰写一篇关于人工智能发展的文章'、'分析特定股票的市场趋势'等。"
+                    }
+                },
+                "required": ["task_description"]
+            }
+        }
+    },
+    {
+        "type": "function",
+        "function": {
+            "name": "search_local_documents",
+            "description": "查询本地文档，用户需提供查询关键词，返回匹配的文档列表，例如用户说'查找关于机器学习的文档'，参数为：{'keyword': '机器学习'}",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "keyword": {
+                        "type": "string",
+                        "description": "查询关键词，例如：'机器学习'、'Python编程'等"
+                    }
+                },
+                "required": [
+                    "keyword"
+                ]
+            }
+        }
+    }
+]
