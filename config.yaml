@@ -1,0 +1,93 @@
+name: 百聆（bailing） 
+version: 1.0
+
+logging:
+  level: debug
+
+# 唤醒词
+WakeWord: 百聆
+
+interrupt: false
+# 是否开启工具调用
+StartTaskMode: false
+# 具体处理时选择的模块
+selected_module:
+  Recorder: RecorderPyAudio
+  ASR: FunASR
+  VAD: SileroVAD
+  LLM: OpenAILLM
+#  TTS: EdgeTTS
+  TTS: KOKOROTTS
+  Player: PygameSoundPlayer
+
+Recorder:
+  RecorderPyAudio:
+    output_file: tmp/
+
+ASR:
+  FunASR:
+    model_dir: ../SenseVoiceSmall
+    output_file: tmp/
+
+VAD:
+  SileroVAD:
+    sampling_rate: 16000
+    threshold: 0.5
+    min_silence_duration_ms: 300  # 如果说话停顿比较长，可以把这个值设置大一些
+
+LLM:
+  OpenAILLM:
+#    model_name: deepseek-chat
+#    url: https://api.deepseek.com
+#    api_key:
+    model_name: llama3.2:latest
+    url: http://localhost:11434/v1
+    api_key: test
+
+TTS:
+  MacTTS:
+    voice: Tingting
+    output_file: tmp/
+  EdgeTTS:
+    voice: zh-CN-XiaoxiaoNeural
+    output_file: tmp/
+  GTTS:
+    lang: zh
+    output_file: tmp/
+  CosyvoiceTTS:
+    output_file: tmp/
+  CHATTTS:
+    output_file: tmp/
+  KOKOROTTS:
+    output_file: tmp/
+    lang: z
+    voice: zf_xiaoxiao
+
+Player:
+  PygameSoundPlayer: null
+  PygamePlayer: null
+  CmdPlayer: null
+  PyaudioPlayer: null
+
+Rag:
+  doc_path: documents/
+  emb_model: models/bge-small-zh
+  model_name: llama3.2:latest
+  url: http://localhost:11434/v1
+  api_key: test
+
+Memory:
+  dialogue_history_path: tmp/
+  memory_file: tmp/memory.json
+  model_name: llama3.2:latest
+  url: http://localhost:11434/v1
+  api_key: test
+
+TaskManager:
+  functions_call_name: plugins/function_calls_config.json
+  aigc_manus_enabled: false
+
+
+
+
+
