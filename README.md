@@ -17,7 +17,7 @@
 ## 📦 快速开始
 
 ### 环境要求
-- NVIDIA显卡（≥8GB VRAM） + CUDA 11.8
+- NVIDIA显卡（≥6GB VRAM）
 - Python >=3.11.11
 - Windows/Linux/macOS（M系列芯片需启用Metal加速）
 
