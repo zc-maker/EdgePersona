@@ -64,6 +64,7 @@ model_path="../../live2/models/兔兔/520兔兔.model3.json"
 🙌 本项目基于以下优秀开源项目构建：
 
 bailing:https://github.com/wwbin2017/bailing
+live2d-py:https://github.com/Arkueid/live2d-py
 
 Ollama - 本地大模型运行框架
 KokoroTTS - 超低延迟语音合成 https://github.com/hexgrad/kokoro
