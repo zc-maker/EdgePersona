@@ -4,7 +4,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 <p align="center">
-  <img scr=![image](https://github.com/user-attachments/assets/80500d00-1bff-42ae-9db2-d803a63d5ee6) alt="实时对话演示" width="600">
+  scr=![image](https://github.com/user-attachments/assets/80500d00-1bff-42ae-9db2-d803a63d5ee6)
 </p>
 - 测试效果：【纯本地部署的电子魅魔！笔记本也能离线，隐私性拉满】 https://www.bilibili.com/video/BV1jydeYTETD/?share_source=copy_web&vd_source=91103f439a8a41ea0b41d31764b980eb
 
