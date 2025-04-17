@@ -6,6 +6,7 @@
 <p align="center">
   <img src="demo.gif" alt="实时对话演示" width="600">
 </p>
+- 测试效果：【纯本地部署的电子魅魔！笔记本也能离线，隐私性拉满】 https://www.bilibili.com/video/BV1jydeYTETD/?share_source=copy_web&vd_source=91103f439a8a41ea0b41d31764b980eb
 
 ## 🚀 核心特性
 - ​**100%本地化运行** - 无需网络连接，所有数据处理在本地完成
