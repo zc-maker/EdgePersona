@@ -24,8 +24,7 @@
 ### 安装步骤
 ```bash
 # 克隆仓库
-git clone https://github.com/yourusername/LocalMind.git
-cd LocalMind
+git clone https://github.com/zc-maker/EdgePersona.git
 
 # 创建虚拟环境（推荐）
 conda #推荐
